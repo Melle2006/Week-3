@@ -3,16 +3,17 @@
 #include<math.h>
 int main()
 {
-	int a, n;
+	int a, num=0, n, t;
 	printf("Enter a number: ");
 	scanf("%d", &n);
+	t=n;
 	while (n!=0)
 	{
 		a=n%10;
 		n=n/10;
-		printf("%d", a);
+		num=num*10+a;
 	}
-	if(a==n)
+	if(num==t)
 	printf("\nIt is a palindrome.");
 	else
 	printf("\nIt is not a palindrome.");
